@@ -4,12 +4,12 @@ get '/' do
   text = params.fetch('text').strip
  
   case text
-  when 'when'
-    'TODOq'
-  when 'what'
-    'TODO'
+  when 'boy'
+    'Fala Galado!'
+  when 'boyzinha'
+    'Diz macho vei!'
   else
-    'Toda'
+    'Vixe, to por fora. Entendi foi nada!'
   end
 end
 
