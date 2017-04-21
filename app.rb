@@ -1,13 +1,15 @@
 require 'sinatra'
  
-post '/' do
+get '/' do
   text = params.fetch('text').strip
  
   case text
   when 'when'
-    'TODO'
+    'TODOq'
   when 'what'
     'TODO'
+  else
+    'Toda'
   end
 end
 
