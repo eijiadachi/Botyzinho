@@ -1,7 +1,13 @@
 require 'sinatra'
  
-InvalidTokenError = Class.new(Exception)
+post '/' do
+  text = params.fetch('text').strip
  
-get '/' do
-  "Hello World!"
+  case text
+  when 'when'
+    'TODO'
+  when 'what'
+    'TODO'
+  end
 end
+
